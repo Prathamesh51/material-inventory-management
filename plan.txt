@@ -1,0 +1,55 @@
+tables :
+category
+    id
+    name
+
+material (under category)
+    id
+    name
+    opening balance
+    category_id
+
+inward_quantities
+    category_id
+    date
+    quantity (decimal)
+
+
+
+relations :
+category --hasmany--> materials --hasmany-->inward_quantities
+
+
+
+pages - 
+category
+    index, create, edit
+material
+    index, create, edit
+inward_quantities
+    create
+
+
+-------------------------------------
+
+category listing page
+
+- when click on add category - use modal for create category 
+- instead to redirect new page and use ajax to submit category form
+- when edit category open new page - materials listing page 
+- for delete category - show popup ( cofirm popup to delete category with their materials (optional without reloading page))
+
+materials liting page
+
+- when click on add material - use modal to and fill material form 
+- submit this form using ajax ( without reploding page)
+- when cick on edit material button then also open modal for edit material using ajax
+- delete material - optional (without reloading page)
+
+
+
+
+
+
+
+
