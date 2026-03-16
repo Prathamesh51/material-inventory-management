@@ -15,7 +15,7 @@ This guide explains how to set up the Laravel 12 Inventory Management project on
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/inventory-management.git
+git clone https://github.com/Prathamesh51/material-inventory-management.git
 cd inventory-management
 
 
