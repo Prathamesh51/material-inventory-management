@@ -8,11 +8,9 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [InwardQuantitiesController::class, 'index']);
 
-Route::get('/dashboard', [CategoryController::class, 'getMaterials']);
+Route::get('/dashboard', [InwardQuantitiesController::class, 'index']);
 
 Route::group(['prefix' => 'categories'], function () {
     Route::get('/', [CategoryController::class, 'index'])->name('categories.index');

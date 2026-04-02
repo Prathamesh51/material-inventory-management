@@ -9,7 +9,7 @@ It allows users to manage materials and track inward and outward quantities whil
 
 * PHP - v8.2
 * Laravel - 12
-* PostgreSQL 
+* PostgreSQL / MySQL 
 * Bootstrap 
 * JQuery 
 
